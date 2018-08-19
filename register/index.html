@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Disaster Rescue | Missing Person Info</title>
-<link rel="icon" type="image" href="images/favicon.ico"/>
+<link rel="icon" type="image" href="images/icon.jpeg"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Medical Emergency Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
@@ -28,12 +28,12 @@
 					<div class="gaps">
 						<p>Name</p>
 						<input type="text" name="Name" id="name" placeholder="Name of Missing Person" required=""/>
-					</div>	
-					<div class="gaps">	
+					</div>
+					<div class="gaps">
 						<p>Phone Number</p>
 						<input type="text" name="mNumber" id="mNumber" placeholder="Contact Number Of Missing Person " />
 					</div>
-					<div class="gaps">	
+					<div class="gaps">
 						<p>Your Number</p>
 						<input type="text" name="YourNumber" id="YourNumber" placeholder="Your Contact Number" required=""/>
 					</div>
@@ -47,16 +47,16 @@
 					</div>
 				</div>
 				<div class="right-agileinfo same">
-					
-					
+
+
 					<div class="gaps">
 						<p>Address</p>
 						<textarea id="Address" name="Address" placeholder="Address of Missing Person" title="Please enter Your Comments"></textarea>
 						</div>
-					
-					
+
+
 					<div class="gaps">
-						<p>District</p>	
+						<p>District</p>
 						<select class="form-control" id="District">
 							<option></option>
 							<option>Kasargod</option>
@@ -80,13 +80,11 @@
 						<p>Upload Photo</p><br>
 						<input type="file" name="ImageToUpload" id="ImageToUpload" placeholder="Upload Photo" />
 					</div>
-					
+
 				</div>
 				<div class="clear"></div>
-				<input type="submit" value="Submit">
+				<input type="button" value="Submit" onclick="upload()">
 			</form>
-			<br>
-			<a href="../finder/"><h2>Add Missing Person</h2></a>
 		</div>
    </div>
    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
@@ -97,12 +95,39 @@
     authDomain: "missing-person-82123.firebaseapp.com",
     databaseURL: "https://missing-person-82123.firebaseio.com",
     projectId: "missing-person-82123",
-    storageBucket: "",
+    storageBucket: "missing-person-82123.appspot.com",
     messagingSenderId: "790489492262"
   };
   firebase.initializeApp(config);
 </script>
-   
+<script>
+    function upload() {
+        console.log('Reached');
+		var database = firebase.database();
+		database.ref('User' + document.getElementById('mNumber').value).set({
+			Name:document.getElementById('name').value,
+			PhoneNumber:document.getElementById('mNumber').value,
+			YourNumber:document.getElementById('YourNumber').value,
+			Place:document.getElementById('Place').value,
+			LastContact:document.getElementById('lastcnt').value,
+			Address:document.getElementById('Address').value,
+			District:document.getElementById('District').value
+		})
+        var storageRef = firebase.storage().ref();
+        var file=document.getElementById('ImageToUpload').files[0];
+        //var image = storageRef.child(file);
+        storageRef.child(document.getElementById('mNumber').value).put(file).then(function (debug) {
+            console.log('Uploaded');
+            debug.ref.getDownloadURL().then(function (url) {
+                database.ref('User' + document.getElementById('mNumber').value).update({
+                    ImageUrl:url
+                })
+                console.log('Url uploaded');
+            })
+
+    })}
+
+</script>
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 		<!-- Calendar -->
 				<link rel="stylesheet" href="css/jquery-ui.css" />
