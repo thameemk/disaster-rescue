@@ -79,7 +79,7 @@
 						
 			</div>
 		</div><center>
-		<a href="../register/index.html">Add Missing Info</a></center>
+		<a href="../register/">Add Missing Info</a></center>
 	</div>
 
 
@@ -103,8 +103,10 @@
             if(snapshot.exists()){
                 console.log('Reached');
                 var content = '';
+                var ctr= 0;
                 snapshot.forEach(function(data){
                     var val = data.val();
+                    content='';
                     content +='<tr>';
                     content += '<td>' + val.Name + '</td>';
                     content += '<td>' + val.PhoneNumber + '</td>';
@@ -112,10 +114,13 @@
                     content += '<td>' + val.Place + '\n' + val.District + '</td>';
                     content += '<td>' + val.Address + '</td>';
                     content += '<td>' + val.ImageUrl + '</td>';
+                    content += '<td> <input type="button" onclick="function change() { val.Status=\'Safe\' }" id="status"+ctr value="default"></td>';
                     content += '</tr>';
+                    $('#data').append(content);
+                    document.getElementById('status').value=val.Status;
+                    ctr++;
                 });
-                console.log('content' + content);
-                $('#data').append(content);
+
             }
         });
     </script>
