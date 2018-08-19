@@ -25,7 +25,7 @@
 	<h1 style="font-size: 43px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #00000;
+    color: #000000;
     word-spacing: 11px;
     letter-spacing: 6px;
     margin: 1.1em 0;
@@ -34,7 +34,7 @@
     <h3  style="font-size: 35px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #00000;
+    color: #000000;
     word-spacing: 10px;
     letter-spacing: 5px;
     margin: 1.1em 0;
@@ -44,7 +44,7 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
-					<table data-vertable="ver1">
+					<table data-vertable="ver1" id="data">
 						<thead>
 							<tr class="row100 head">
 								<th class="column100 column1" data-column="column1">Name</th>
@@ -58,7 +58,7 @@
 								<th class="column100 column8" data-column="column8">Status reporter<br>(Number)</th>
 							</tr>
 						</thead>
-						<tbody>
+						<!--<tbody>
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">
 								<td class="column100 column2" data-column="column2">
@@ -68,10 +68,10 @@
 								<td class="column100 column6" data-column="column6">
 								<td class="column100 column7" data-column="column7">
 								<td class="column100 column8" data-column="column8">
-							</tr>
+
 
 							
-						</tbody>
+						</tbody></tr>-->
 					</table>
 				</div>
 
@@ -84,10 +84,43 @@
 
 
 
-	
-
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD_2lridHhNRmrsBAQOkhtmU-8txiZjRhg",
+            authDomain: "missing-person-82123.firebaseapp.com",
+            databaseURL: "https://missing-person-82123.firebaseio.com",
+            projectId: "missing-person-82123",
+            storageBucket: "missing-person-82123.appspot.com",
+            messagingSenderId: "790489492262"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        var database = firebase.database();
+        database.ref().once('value', function(snapshot){
+            if(snapshot.exists()){
+                console.log('Reached');
+                var content = '';
+                snapshot.forEach(function(data){
+                    var val = data.val();
+                    content +='<tr>';
+                    content += '<td>' + val.Name + '</td>';
+                    content += '<td>' + val.PhoneNumber + '</td>';
+                    content += '<td>' + val.YourNumber + '</td>';
+                    content += '<td>' + val.Place + '\n' + val.District + '</td>';
+                    content += '<td>' + val.Address + '</td>';
+                    content += '<td>' + val.ImageUrl + '</td>';
+                    content += '</tr>';
+                });
+                console.log('content' + content);
+                $('#data').append(content);
+            }
+        });
+    </script>
+<!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
