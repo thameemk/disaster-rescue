@@ -41,19 +41,15 @@
 						<p>Place</p>
 						<input type="text" name="Place" id="Place" placeholder="Place where he last connected" />
 					</div>
-					<div class="gaps">
-						<p>Last Contact Time</p>
-						<input type="text" name="lastcnt" id="lastcnt" placeholder="Time And Date of Last Contact" required=""/>
-					</div>
+					
 				</div>
 				<div class="right-agileinfo same">
 
 
 					<div class="gaps">
-						<p>Address</p>
-						<textarea id="Address" name="Address" placeholder="Address of Missing Person" title="Please enter Your Comments"></textarea>
-						</div>
-
+						<p>Last Contact Time</p>
+						<input type="text" name="lastcnt" id="lastcnt" placeholder="Time And Date of Last Contact" required=""/>
+					</div>
 
 					<div class="gaps">
 						<p>District</p>
@@ -113,7 +109,7 @@
 			YourNumber:document.getElementById('YourNumber').value,
 			Place:document.getElementById('Place').value,
 			LastContact:document.getElementById('lastcnt').value,
-			Address:document.getElementById('Address').value,
+			
 			District:document.getElementById('District').value
 		})
         var storageRef = firebase.storage().ref();
