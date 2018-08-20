@@ -42,20 +42,21 @@
     font-family: 'Droid Sans', sans-serif;">Missing Info Finder</h3>
 	<div class="limiter">
 		<div class="container-table100">
+			<p align="center">Copy & Paste the Image URL To view the Photos</p>
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
 					<table data-vertable="ver1" id="data">
 						<thead>
 							<tr class="row100 head">
 								<th class="column100 column1" data-column="column1">Name</th>
-								<th class="column100 column2" data-column="column2">Phone Number</th>
-								<th class="column100 column3" data-column="column3">Reporter(Number)</th>
+								<th class="column100 column2" data-column="column2">Phone<br> Number</th>
+								<th class="column100 column3" data-column="column3">Reporter<br>(Number)</th>
 								<th class="column100 column4" data-column="column4">Place <br>&<br>District</th>
 								
-								<th class="column100 column5" data-column="column5">Address</th>
+							
 								<th class="column100 column6" data-column="column6">Photo</th>
 								<th class="column100 column7" data-column="column7">Status</th>
-								<th class="column100 column8" data-column="column8">Status reporter<br>(Number)</th>
+								<!--<th class="column100 column8" data-column="column8">Status reporter<br>(Number)</th>-->
 							</tr>
 						</thead>
 						<!--<tbody>
@@ -112,7 +113,7 @@
                     content += '<td>' + val.PhoneNumber + '</td>';
                     content += '<td>' + val.YourNumber + '</td>';
                     content += '<td>' + val.Place + '\n' + val.District + '</td>';
-                    content += '<td>' + val.Address + '</td>';
+                   
                     content += '<td>' + val.ImageUrl + '</td>';
                     content += '<td xmlns="http://www.w3.org/1999/html">' + ' <button onclick=change("'+val.PhoneNumber+'","'+data.key+'") id = '+val.PhoneNumber+'>'+val.Status+'</td>';
                     content += '</tr>';
