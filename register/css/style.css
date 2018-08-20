@@ -229,7 +229,7 @@ p.wickedpicker__title {
 	.book-appointment h2 {
 		font-size: 22px;
 	}
-	input[type=Submit] {
+	input[type=button] {
 		margin-top: 1.5em;
 		font-size: 1.02em;
 	}
@@ -281,7 +281,7 @@ p.wickedpicker__title {
 	}
 }
 @media(max-width:991px){
-	input[type=Submit] {
+	input[type=button] {
 		font-size: 1.01em;
 		padding: 7px 20px;
 	}
@@ -330,7 +330,7 @@ p.wickedpicker__title {
 	.same {
 		padding: 0px 0px;
 	}
-	input[type=Submit] {
+	input[type=button] {
 		font-size: 0.9em;
 		padding: 6px 18px;
 	}
@@ -394,7 +394,7 @@ p.wickedpicker__title {
 	.book-appointment h2 {
 		font-size: 16px;
 	}
-	input[type=Submit] {
+	input[type=button] {
 		margin-top: 1em;
 	}
 	h1 {
@@ -502,7 +502,7 @@ p.wickedpicker__title {
 	.wickedpicker {
 		width: 241px;
 	}
-	input[type=Submit] {
+	input[type=button] {
 		padding: 5px 14px;
 	}
 	body {
