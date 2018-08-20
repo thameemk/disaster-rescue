@@ -97,7 +97,7 @@ textarea {
 .book-appointment select.form-control option {
     background:#111;
 }
-input[type=Submit] {
+input[type=button] {
     display: block;
     color: #fff;
     margin: 0 auto;
@@ -116,7 +116,7 @@ input[type=Submit] {
     -o-transition: 0.5s all ease;
     -ms-transition: 0.5s all ease;
 }
-input[type=Submit]:hover {
+input[type=button]:hover {
     background: #023e99;
     border-color: #023e99;
     color: #fefefe;
