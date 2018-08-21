@@ -1,142 +1,165 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Disaster Rescue | Missing Person Info</title>
-<link rel="icon" type="image" href="images/favicon.ico"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Medical Emergency Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
- Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<!--fonts--> 
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-<!--//fonts--> 
+	<title>Disaster Rescue | Add missing Person</title>
+	<meta charset="UTF-8">
+	
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
-<!--background-->
-<h1>Disaster Rescue</h1>
-    <div class="bg-agile">
-	<div class="book-appointment">
-	<h2>Add Missing Person</h2>
-			<form action="#" method="post">
-				<div class="left-agileits-w3layouts same">
-					<div class="gaps">
-						<p>Name</p>
-						<input type="text" name="Name" id="name" placeholder="Name of Missing Person" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Phone Number</p>
-						<input type="text" name="mNumber" id="mNumber" placeholder="Contact Number Of Missing Person " />
-					</div>
-					<div class="gaps">
-						<p>Your Number</p>
-						<input type="text" name="YourNumber" id="YourNumber" placeholder="Your Contact Number" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Place</p>
-						<input type="text" name="Place" id="Place" placeholder="Place where he last connected" />
-					</div>
-					
+	<h1 style="font-size: 43px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    word-spacing: 11px;
+    letter-spacing: 6px;
+    margin: 1.1em 0;
+    text-align: center;
+    font-family: 'Droid Sans', sans-serif;">Disaster Rescue</h1>
+    <h3  style="font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    margin: 1.1em 0;
+    text-align: center;
+    font-family: 'Droid Sans', sans-serif;">Missing Info Finder</h3>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<table data-vertable="ver1" id="data">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column1" data-column="column1">Name</th>
+								<th class="column100 column2" data-column="column2">Phone<br> Number</th>
+								<th class="column100 column3" data-column="column3">Reporter<br>(Number)</th>
+								<th class="column100 column4" data-column="column4">Place <br>&<br>District</th>
+								
+							
+								<th class="column100 column6" data-column="column6">Photo</th>
+								<th class="column100 column7" data-column="column7">Status</th>
+								<!--<th class="column100 column8" data-column="column8">Status reporter<br>(Number)</th>-->
+							</tr>
+						</thead>
+						<!--<tbody>
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1">
+								<td class="column100 column2" data-column="column2">
+								<td class="column100 column3" data-column="column3">
+								<td class="column100 column4" data-column="column4">
+								<td class="column100 column5" data-column="column5">
+								<td class="column100 column6" data-column="column6">
+								<td class="column100 column7" data-column="column7">
+								<td class="column100 column8" data-column="column8">
+
+
+							
+						</tbody></tr>-->
+					</table>
 				</div>
-				<div class="right-agileinfo same">
+
+				
+						
+			</div>
+		</div><center>
+		<a href="../register/">Add Missing Info</a></center>
+	</div>
 
 
-					<div class="gaps">
-						<p>Last Contact Time</p>
-						<input type="text" name="lastcnt" id="lastcnt" placeholder="Time And Date of Last Contact" required=""/>
-					</div>
 
-					<div class="gaps">
-						<p>District</p>
-						<select class="form-control" id="District">
-							<option></option>
-							<option>Kasargod</option>
-							<option>Kannur</option>
-							<option>Kozhikode</option>
-							<option>Wayanad</option>
-							<option>Malappuram</option>
-							<option>Idukki</option>
-							<option>Palakkad</option>
-							<option>Thrissur</option>
-							<option>Ernakulam</option>
-							<option>Alappuzha</option>
-							<option>Kottayam</option>
-							<option>Pathanamthitta</option>
-							<option>Kollam</option>
-							<option>Thiruvanathapuram</option>
-							<option>Other</option>
-						</select>
-					</div>
-					<div class="gaps">
-						<p>Upload Photo</p><br>
-						<input type="file" name="ImageToUpload" id="ImageToUpload" placeholder="Upload Photo" />
-					</div>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD_2lridHhNRmrsBAQOkhtmU-8txiZjRhg",
+            authDomain: "missing-person-82123.firebaseapp.com",
+            databaseURL: "https://missing-person-82123.firebaseio.com",
+            projectId: "missing-person-82123",
+            storageBucket: "missing-person-82123.appspot.com",
+            messagingSenderId: "790489492262"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        var database = firebase.database();
+        database.ref().once('value', function(snapshot){
+            if(snapshot.exists()){
+                console.log('Reached');
+                var content = '';
+                var ctr= 0;
+                snapshot.forEach(function(data){
+                    var val = data.val();
+                    content='';
+                    content +='<tr>';
+                    content += '<td>' + val.Name + '</td>';
+                    content += '<td>' + val.PhoneNumber + '</td>';
+                    content += '<td>' + val.YourNumber + '</td>';
+                    content += '<td>' + val.Place + '\n' + val.District + '</td>';
+                    content += '<td><a href="'+val.ImageUrl +'" target="_blank">Picture</a></td>';
+                    content += '<td xmlns="http://www.w3.org/1999/html">' + ' <button onclick=change("'+val.PhoneNumber+'","'+data.key+'") id = '+val.PhoneNumber+'>'+val.Status+'</td>';
+                    content += '</tr>';
+                    $('#data').append(content);
+                    ctr++;
+                });
 
-				</div>
-				<div class="clear"></div>
-				<input type="button" value="Submit" onclick="upload()">
-			</form>
-			<br>
-			<a href="../finder/index.html"><h2>Find a missing Person</h2></a>
-		</div>
-		</div>
-   </div>
-   <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD_2lridHhNRmrsBAQOkhtmU-8txiZjRhg",
-    authDomain: "missing-person-82123.firebaseapp.com",
-    databaseURL: "https://missing-person-82123.firebaseio.com",
-    projectId: "missing-person-82123",
-    storageBucket: "missing-person-82123.appspot.com",
-    messagingSenderId: "790489492262"
-  };
-  firebase.initializeApp(config);
-</script>
-<script>
-    function upload() {
-        console.log('Reached');
-		var database = firebase.database();
-		database.ref('User' + document.getElementById('mNumber').value).set({
-			Name:document.getElementById('name').value,
-			PhoneNumber:document.getElementById('mNumber').value,
-			YourNumber:document.getElementById('YourNumber').value,
-			Place:document.getElementById('Place').value,
-			LastContact:document.getElementById('lastcnt').value,
-			
-			District:document.getElementById('District').value
-		})
-        var storageRef = firebase.storage().ref();
-        var file=document.getElementById('ImageToUpload').files[0];
-        //var image = storageRef.child(file);
-        storageRef.child(document.getElementById('mNumber').value).put(file).then(function (debug) {
-            console.log('Uploaded');
-            debug.ref.getDownloadURL().then(function (url) {
-                database.ref('User' + document.getElementById('mNumber').value).update({
-                    ImageUrl:url
+            }
+        });
+
+
+        function change(id,key) {
+
+            console.log(key);
+            if ($(id).innerHTML == "Unsafe"){
+                $(id).innerHTML = "Safe";
+                var btn =document.getElementById(id);
+                btn.innerHTML = "Safe";
+
+                var database = firebase.database();
+                database.ref(key).update({
+                    Status:'Safe'
                 })
-                console.log('Url uploaded');
-            })
+            }
+            else{
+                $(id).innerHTML = "Unsafe";
+                var btn =document.getElementById(id);
+                btn.innerHTML = "Unsafe";
 
-    })}
+                var database = firebase.database();
+                database.ref(key).update({
+                    Status:'Unsafe'
+                })
+            }}
 
-</script>
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-		<!-- Calendar -->
-				<link rel="stylesheet" href="css/jquery-ui.css" />
-				<script src="js/jquery-ui.js"></script>
-				  <script>
-						  $(function() {
-							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
-						  });
-				  </script>
-			<!-- //Calendar -->
+
+
+
+    </script>
+<!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
 </html>
