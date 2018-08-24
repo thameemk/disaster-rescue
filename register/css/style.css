@@ -97,7 +97,7 @@ textarea {
 .book-appointment select.form-control option {
     background:#111;
 }
-input[type=button] {
+input[type=submit] {
     display: block;
     color: #fff;
     margin: 0 auto;
@@ -116,7 +116,7 @@ input[type=button] {
     -o-transition: 0.5s all ease;
     -ms-transition: 0.5s all ease;
 }
-input[type=button]:hover {
+input[type=submit]:hover {
     background: #023e99;
     border-color: #023e99;
     color: #fefefe;
@@ -229,7 +229,7 @@ p.wickedpicker__title {
 	.book-appointment h2 {
 		font-size: 22px;
 	}
-	input[type=button] {
+	input[type=submit] {
 		margin-top: 1.5em;
 		font-size: 1.02em;
 	}
@@ -281,7 +281,7 @@ p.wickedpicker__title {
 	}
 }
 @media(max-width:991px){
-	input[type=button] {
+	input[type=submit] {
 		font-size: 1.01em;
 		padding: 7px 20px;
 	}
@@ -330,7 +330,7 @@ p.wickedpicker__title {
 	.same {
 		padding: 0px 0px;
 	}
-	input[type=button] {
+	input[type=submit] {
 		font-size: 0.9em;
 		padding: 6px 18px;
 	}
@@ -394,7 +394,7 @@ p.wickedpicker__title {
 	.book-appointment h2 {
 		font-size: 16px;
 	}
-	input[type=button] {
+	input[type=submit] {
 		margin-top: 1em;
 	}
 	h1 {
@@ -502,7 +502,7 @@ p.wickedpicker__title {
 	.wickedpicker {
 		width: 241px;
 	}
-	input[type=button] {
+	input[type=submit] {
 		padding: 5px 14px;
 	}
 	body {
