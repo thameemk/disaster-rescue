@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>
+<body background="bg.jpg">
 	<h1 style="font-size: 43px;
     font-weight: 700;
     text-transform: uppercase;
@@ -42,6 +42,7 @@
     font-family: 'Droid Sans', sans-serif;">Missing Info Finder</h3>
 	<div class="limiter">
 		<div class="container-table100">
+			<p align="center"><b><font size="5px">This page shall be available from now on for any calamity to strike any part of the world</font></b></p>
 			<div class="wrap-table100">
 				<div class="table100 ver1 m-b-110">
 					<table data-vertable="ver1" id="data">
@@ -78,8 +79,10 @@
 				
 						
 			</div>
-		</div><center>
-		<a href="../register/">Add Missing Info</a></center>
+		</div>
+      <div style="background-color: #FFA500"><center>
+		<a href="../register/"><font size="6px"><b>Add Missing Person Info</b></font></a></center></div>
+		
 	</div>
 
 
@@ -112,6 +115,7 @@
                     content += '<td>' + val.PhoneNumber + '</td>';
                     content += '<td>' + val.YourNumber + '</td>';
                     content += '<td>' + val.Place + '\n' + val.District + '</td>';
+                   
                     content += '<td><a href="'+val.ImageUrl +'" target="_blank">Picture</a></td>';
                     content += '<td xmlns="http://www.w3.org/1999/html">' + ' <button onclick=change("'+val.PhoneNumber+'","'+data.key+'") id = '+val.PhoneNumber+'>'+val.Status+'</td>';
                     content += '</tr>';
