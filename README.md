@@ -1,4 +1,4 @@
-# disaster_rescue
-# This is a website for missing person finder in kerala flood 2018
-# We will spread up soon to the entire world
-
+# Disaster Rescue
+<h3> This website provides a single platform to find out missing persons <br>
+  You can enter the missing info and share it the world </h3>#
+ 
