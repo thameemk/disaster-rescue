@@ -1,4 +1,5 @@
-# Disaster Rescue
-<h3> This website provides a single platform to find out missing people <br>
-  You can enter the missing info and share it the world </h3>
+# ___Disaster Rescue___
+
+### ___A prototype of web application to find out the missing people.___
+
  
